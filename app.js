@@ -34,7 +34,7 @@ app.post('/api/submit', (req, res) => {
     const mailOptions = {
         from: 'Contact Form Submission',
         to: process.env.AUTH_USER,
-        subject: 'Name: ' + req.body.firstName + ', ' + req.body.lastName + ' Email: ' + req.body.emailAddress,
+        subject: 'Name: ' + req.body.firstName + ' ' + req.body.lastName + ', Email: ' + req.body.emailAddress,
         text: req.body.msg
     };
 
